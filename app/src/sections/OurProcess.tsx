@@ -3,21 +3,18 @@ import { MessageSquare, Lightbulb, Rocket } from 'lucide-react';
 
 const processSteps = [
   {
-    number: '01',
     title: 'CONSULTATION:',
     description:
       'Every great strategy begins with understanding — your goals, your audience, your ambition. We dive deep into discovery, turning insights into inspiration and objectives into opportunities. Because when we align with your vision, growth isn\'t just planned — it\'s inevitable.',
     icon: MessageSquare,
   },
   {
-    number: '02',
     title: 'STRATEGY DEVELOPMENT:',
     description:
       'Driven by data and inspired by creativity, we design custom strategies that unite SEO, PPC, social media, and content marketing — delivering impact that\'s not just seen, but felt.',
     icon: Lightbulb,
   },
   {
-    number: '03',
     title: 'IMPLEMENTATION:',
     description:
       'We execute every strategy with precision and creative flair — launching campaigns that spark connection, inspire engagement, and leave a lasting impression on your audience.',
@@ -81,7 +78,7 @@ const OurProcess = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {processSteps.map((step, index) => (
             <div
-              key={step.number}
+              key={index}
               className={`relative group transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
@@ -89,10 +86,6 @@ const OurProcess = () => {
             >
               {/* Card */}
               <div className="relative h-full bg-gradient-to-br from-[#3a3a3a]/80 to-[#2a2a2a]/80 rounded-2xl p-8 border border-white/10 hover:border-teal-400/30 transition-all duration-500 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-teal-500/10">
-                {/* Step Number */}
-                <div className="absolute -top-4 -left-2 text-7xl font-bold text-teal-400/20 select-none">
-                  {step.number}
-                </div>
 
                 {/* Icon */}
                 <div className="relative z-10 mb-6">

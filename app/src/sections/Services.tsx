@@ -7,14 +7,14 @@ const services = [
     description:
       'is about shaping how people see and feel about a brand. It begins with understanding the brand\'s story, audience, and goals, then creating a clear strategy that defines its purpose and personality. We design visuals and messaging that bring the brand to life — from logo and colours to tone and storytelling. Once launched, the brand is shared through campaigns and experiences that connect with people. In essence, branding turns a business into a name people trust, remember, and love.',
     icon: Palette,
-    image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop',
+    image: '/images/logos.jpg',
   },
   {
     title: 'Social media management',
     description:
       'is all about helping brands shine online. It starts with knowing the brand\'s story and audience, then creating content that feels real, looks great, and sparks conversation. We plan posts, designs visuals, and engages with followers to keep the brand active and authentic. By tracking results and staying on top of trends, we also help the brand to grow and connect with people in meaningful ways. In short, our agency turns your social media everyday posts into powerful moments that build trust and love for the brand.',
     icon: Share2,
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop',
+    image: '/images/instagram.jpg',
   },
   {
     title: 'F & B lifestyle launch campaigns',
@@ -42,7 +42,7 @@ const services = [
     description:
       'is all about making a brand easy to find online. It uses strategies like keyword optimization, content creation, and technical improvements to boost search rankings and attract the right audience. The goal is to increase website traffic, visibility, and engagement, turning searches into loyal customers.',
     icon: Search,
-    image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&h=400&fit=crop',
+    image: '/images/google-ads.jpg',
   },
 ];
 
@@ -117,11 +117,11 @@ const Services = () => {
             >
               <div className="relative bg-gradient-to-br from-[#2a2a2a]/90 to-[#1f1f1f]/90 rounded-2xl overflow-hidden border border-white/5 hover:border-teal-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10">
                 {/* Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden bg-black/50">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2a2a2a] via-transparent to-transparent"></div>
 

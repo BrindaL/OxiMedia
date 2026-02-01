@@ -62,18 +62,26 @@ const Contact = () => {
           >
             <div className="bg-gradient-to-br from-[#2a2a2a]/80 to-[#1f1f1f]/80 rounded-3xl p-8 md:p-12 border border-white/10 backdrop-blur-sm">
               {/* Phone */}
-              <div className="flex items-center gap-6 mb-8 group">
-                <div className="w-14 h-14 bg-gradient-to-br from-teal-400 to-teal-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-teal-400/30 transition-shadow duration-300">
+              <div className="flex items-start gap-6 mb-8 group">
+                <div className="w-14 h-14 bg-gradient-to-br from-teal-400 to-teal-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-teal-400/30 transition-shadow duration-300 flex-shrink-0">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <p className="text-white/50 text-sm uppercase tracking-wider mb-1">Phone</p>
-                  <a
-                    href="tel:9731797318"
-                    className="text-white text-xl md:text-2xl font-semibold hover:text-teal-300 transition-colors duration-300"
-                  >
-                    97317 97318
-                  </a>
+                  <p className="text-white/50 text-sm uppercase tracking-wider mb-2">Phone</p>
+                  <div className="flex flex-col gap-1">
+                    <a
+                      href="tel:9731797318"
+                      className="text-white text-xl md:text-2xl font-semibold hover:text-teal-300 transition-colors duration-300"
+                    >
+                      97317 97318
+                    </a>
+                    <a
+                      href="tel:9743143189"
+                      className="text-white text-xl md:text-2xl font-semibold hover:text-teal-300 transition-colors duration-300"
+                    >
+                      97431 43189
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -88,7 +96,7 @@ const Contact = () => {
                     href="mailto:oxi.support@oximedia.co.in"
                     className="text-white text-lg md:text-xl font-semibold hover:text-teal-300 transition-colors duration-300"
                   >
-                    oxi.support@oximedia.co.in
+                    connect@oximedia.co.in
                   </a>
                 </div>
               </div>
