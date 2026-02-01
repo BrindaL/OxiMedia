@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Phone, Mail, Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Phone, Mail, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
