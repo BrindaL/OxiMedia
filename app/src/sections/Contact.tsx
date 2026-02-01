@@ -85,10 +85,10 @@ const Contact = () => {
                 <div>
                   <p className="text-white/50 text-sm uppercase tracking-wider mb-1">Email</p>
                   <a
-                    href="mailto:oximediaofficial@gmail.com"
+                    href="mailto:oxi.support@oximedia.co.in"
                     className="text-white text-lg md:text-xl font-semibold hover:text-teal-300 transition-colors duration-300"
                   >
-                    oximediaofficial@gmail.com
+                    oxi.support@oximedia.co.in
                   </a>
                 </div>
               </div>
