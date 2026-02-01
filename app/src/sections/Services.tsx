@@ -1,20 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
 import { Palette, Share2, UtensilsCrossed, TrendingUp, Plane, Search } from 'lucide-react';
 
+const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 const services = [
   {
     title: 'Branding',
     description:
       'is about shaping how people see and feel about a brand. It begins with understanding the brand\'s story, audience, and goals, then creating a clear strategy that defines its purpose and personality. We design visuals and messaging that bring the brand to life — from logo and colours to tone and storytelling. Once launched, the brand is shared through campaigns and experiences that connect with people. In essence, branding turns a business into a name people trust, remember, and love.',
     icon: Palette,
-    image: '/images/logos.jpg',
+    image: getImagePath('images/logos.jpg'),
   },
   {
     title: 'Social media management',
     description:
       'is all about helping brands shine online. It starts with knowing the brand\'s story and audience, then creating content that feels real, looks great, and sparks conversation. We plan posts, designs visuals, and engages with followers to keep the brand active and authentic. By tracking results and staying on top of trends, we also help the brand to grow and connect with people in meaningful ways. In short, our agency turns your social media everyday posts into powerful moments that build trust and love for the brand.',
     icon: Share2,
-    image: '/images/instagram.jpg',
+    image: getImagePath('images/instagram.jpg'),
   },
   {
     title: 'F & B lifestyle launch campaigns',
@@ -42,7 +44,7 @@ const services = [
     description:
       'is all about making a brand easy to find online. It uses strategies like keyword optimization, content creation, and technical improvements to boost search rankings and attract the right audience. The goal is to increase website traffic, visibility, and engagement, turning searches into loyal customers.',
     icon: Search,
-    image: '/images/google-ads.jpg',
+    image: getImagePath('images/google-ads.jpg'),
   },
 ];
 

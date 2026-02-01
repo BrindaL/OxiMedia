@@ -112,7 +112,7 @@ const Hero = () => {
       {/* Logo */}
       <div className="relative z-10 flex flex-col items-center">
         <img 
-          src="/oxiImage.png" 
+          src={`${import.meta.env.BASE_URL}oxiImage.png`} 
           alt="OXI Media Logo"
           className="w-full max-w-2xl h-auto"
         />

@@ -98,7 +98,7 @@ const OurStory = () => {
               {/* Video */}
               <video
                 ref={videoRef}
-                src="/video2.mp4"
+                src={`${import.meta.env.BASE_URL}video2.mp4`}
                 muted={isMuted}
                 playsInline
                 onEnded={handleVideoEnd}

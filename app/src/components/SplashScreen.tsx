@@ -38,7 +38,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
           className="w-full h-full object-cover"
           muted
         >
-          <source src="/video1.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}video1.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
