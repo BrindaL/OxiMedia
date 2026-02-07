@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Palette, Share2, UtensilsCrossed, TrendingUp, Plane, Search } from 'lucide-react';
+import { Palette, Share2, UtensilsCrossed, TrendingUp, Plane, Search, Rocket } from 'lucide-react';
 
 const getImagePath = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
@@ -9,7 +9,7 @@ const services = [
     description:
       'is about shaping how people see and feel about a brand. It begins with understanding the brand\'s story, audience, and goals, then creating a clear strategy that defines its purpose and personality. We design visuals and messaging that bring the brand to life — from logo and colours to tone and storytelling. Once launched, the brand is shared through campaigns and experiences that connect with people. In essence, branding turns a business into a name people trust, remember, and love.',
     icon: Palette,
-    image: getImagePath('images/logos.jpg'),
+    image: getImagePath('images/branding.jpeg'),
   },
   {
     title: 'Social media management',
@@ -45,6 +45,13 @@ const services = [
       'is all about making a brand easy to find online. It uses strategies like keyword optimization, content creation, and technical improvements to boost search rankings and attract the right audience. The goal is to increase website traffic, visibility, and engagement, turning searches into loyal customers.',
     icon: Search,
     image: getImagePath('images/google-ads.jpg'),
+  },
+  {
+    title: 'Brand Launch & Brand Building',
+    description:
+      "At OXI Media, we don't just market brands — we build them from the ground up. From defining brand positioning and identity to crafting a strong visual language, we create a solid foundation that ensures consistency across all touchpoints. We manage the entire launch journey, including pre-launch strategy, content planning, promotions, influencer collaborations, and launch campaigns to drive strong awareness and recall from day one. Post-launch, we focus on structured marketing and performance-driven strategies to help brands grow and scale sustainably. Whether it's a café, restaurant, brewery, retail, or lifestyle brand, we work as your long-term brand partner — not just a marketing agency.",
+    icon: Rocket,
+    image: getImagePath('images/branding.png'),
   },
 ];
 
@@ -114,10 +121,10 @@ const Services = () => {
               key={service.title}
               className={`group relative transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-              }`}
+              } ${index === services.length - 1 && services.length % 2 !== 0 ? 'lg:col-span-2 flex justify-center' : ''}`}
               style={{ transitionDelay: `${(index + 1) * 150}ms` }}
             >
-              <div className="relative bg-gradient-to-br from-[#2a2a2a]/90 to-[#1f1f1f]/90 rounded-2xl overflow-hidden border border-white/5 hover:border-teal-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10">
+              <div className="relative bg-gradient-to-br from-[#2a2a2a]/90 to-[#1f1f1f]/90 rounded-2xl overflow-hidden border border-white/5 hover:border-teal-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10 w-full">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden bg-black/50">
                   <img
