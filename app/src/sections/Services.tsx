@@ -94,23 +94,9 @@ const Services = () => {
           }`}
         >
           <div className="flex items-center gap-4 mb-4">
-            <div className="flex flex-col">
-              <span className="text-white/60 text-sm tracking-widest">O</span>
-              <span className="text-white/60 text-sm tracking-widest">U</span>
-              <span className="text-white/60 text-sm tracking-widest">R</span>
-            </div>
-            <div className="h-16 w-px bg-white/20"></div>
-            <div className="flex flex-col">
-              <span className="text-white/60 text-sm tracking-widest">S</span>
-              <span className="text-white/60 text-sm tracking-widest">E</span>
-              <span className="text-white/60 text-sm tracking-widest">R</span>
-              <span className="text-white/60 text-sm tracking-widest">V</span>
-              <span className="text-white/60 text-sm tracking-widest">I</span>
-              <span className="text-white/60 text-sm tracking-widest">C</span>
-              <span className="text-white/60 text-sm tracking-widest">E</span>
-              <span className="text-white/60 text-sm tracking-widest">S</span>
-              <span className="text-white/60 text-sm tracking-widest">:</span>
-            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wider">
+              Our <span className="text-teal-400">Services</span>
+            </h2>
           </div>
         </div>
 
